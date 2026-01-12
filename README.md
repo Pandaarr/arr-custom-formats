@@ -9,6 +9,8 @@ Mini guide pour grab et MAJ ses médias dans la version la plus légère, à aju
 2. Pour éditer les profils, se référer aux **TRaSH Guides** suivant :
 [Radarr profil](https://trash-guides.info/Radarr/radarr-setup-quality-profiles/)
 [Sonarr profil](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/)
+<br>
+<br>
 
 ## Radarr
 
