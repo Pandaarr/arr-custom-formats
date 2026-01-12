@@ -257,7 +257,7 @@ Descriptif<br>
 
 Voici un exemple des scores que j'ai appliqué uniquement sur HD-1080p, à adapter à ce que vous souhaitez :)<br>
 <br>
-<img src="images/score-sonarr.jpg.jpg" alt="score Sonarr" width="100%" height="auto">
+<img src="images/score-sonarr.jpg" alt="score Sonarr" width="100%" height="auto">
 <br>
 <br>
 Have fun !
