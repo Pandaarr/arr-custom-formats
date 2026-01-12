@@ -6,7 +6,7 @@ Mini guide pour grab et MAJ ses médias dans la version la plus légère, à aju
 <b>Radarr :</b> <a href="https://trash-guides.info/Radarr/Radarr-import-custom-formats/" target="_blank">Créer</a> | <a href="https://trash-guides.info/Radarr/Radarr-how-to-update-custom-formats/" target="_blank">Mettre à jour</a><br>
 <b>Sonarr :</b> <a href="https://trash-guides.info/Sonarr/sonarr-import-custom-formats/" target="_blank">Créer</a> | <a href="https://trash-guides.info/Sonarr/sonarr-how-to-update-custom-formats/" target="_blank">Mettre à jour</a>
 
-2. Pour éditer les profils, se référer aux **TRaSH Guides** suivant :
+2. Pour éditer les **profils**, se référer aux **TRaSH Guides** suivant :
 [Radarr profil](https://trash-guides.info/Radarr/radarr-setup-quality-profiles/)
 [Sonarr profil](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/)
 <br>
