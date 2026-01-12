@@ -1100,8 +1100,8 @@ Reconnaître les vraies releases MULTi<br>
 <br>
 
 **Season Packs** ⚠️<br>
-Attention, à utiliser uniquement si vous avez un ratio correct sur l'ensemble de vos trackers !<br>
-Cela permet de favoriser les packs de saisons. Pourquoi ça peut paraître con : si on a grab épisode / épisode et que la même team fait un pack, ça sert à rien du tout, on crame son ratio pour rien<br>.
+_Attention, à utiliser uniquement si vous avez un ratio correct sur l'ensemble de vos trackers !_<br><br>
+Cela permet de favoriser les packs de saisons. Pourquoi ça peut paraître con : si on a grab épisode / épisode et que la même team fait un pack, ça sert à rien du tout, on crame son ratio pour rien.<br>
 MAIS, associé avec le custom format **Light** (H265), ça peut faire économiser pas mal d'espace car les releases h265 mettent souvent plus de temps à arriver, et j'ai cru remarquer que c'est souvent quand une saison complète est dispo qu'on voit les packs h265 arrivés... Voilà voilà, je me sentais obligé de me justifier haha<br>
   ```sh
   {
