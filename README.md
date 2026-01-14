@@ -699,6 +699,206 @@ Permet d'inclure les médias qui sont HDR compatible malgré le DV, ça évite d
 <br>
 <br>
 
+**Episode ≤ 1 Go**<br>
+Orienter vers des épisodes de moins de 1Go<br>
+  ```sh
+  {
+  "name": "Episode ≤ 1 Go",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1 Go max",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
+**Episode ≤ 2 Go**<br>
+Orienter vers des épisodes de moins de 2Go<br>
+  ```sh
+  {
+  "name": "Episode ≤ 2 Go",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "2 Go max",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
+**Episode ≤ 600 Mo**<br>
+Orienter vers des épisodes de moins de 600Mo<br>
+  ```sh
+  {
+  "name": "Episode ≤ 600 Mo",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "600 Mo max",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 0,
+        "max": 0.6
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
+**Episode ≤ 800 Mo**<br>
+Orienter vers des épisodes de moins de 800Mo<br>
+  ```sh
+  {
+  "name": "Episode ≤ 800 Mo",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "800 Mo max",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 0,
+        "max": 0.8
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
 **FR**<br>
 Afin de reconnaître si un média est uniquement avec une piste son française (true french, etc..)<br>
   ```sh
@@ -839,206 +1039,6 @@ Préférer les releases h265<br>
 <br>
 <br>
 
-**Max 1Go**<br>
-Orienter vers des épisodes de moins de 1Go<br>
-  ```sh
-  {
-  "name": "Max 1 Go",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "1 Go max",
-      "implementation": "SizeSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "min": 0,
-        "max": 1
-      }
-    },
-    {
-      "name": "480p OUT",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 480
-      }
-    },
-    {
-      "name": "720p OUT",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 720
-      }
-    },
-    {
-      "name": "Season pack",
-      "implementation": "ReleaseTypeSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    }
-  ]
-}
-  ```
-<br>
-<br>
-
-**Max 2Go**<br>
-Orienter vers des épisodes de moins de 2Go<br>
-  ```sh
-  {
-  "name": "Max 2 Go",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "2 Go max",
-      "implementation": "SizeSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "min": 0,
-        "max": 2
-      }
-    },
-    {
-      "name": "480p OUT",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 480
-      }
-    },
-    {
-      "name": "720p OUT",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 720
-      }
-    },
-    {
-      "name": "Season pack",
-      "implementation": "ReleaseTypeSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    }
-  ]
-}
-  ```
-<br>
-<br>
-
-**Max 600Mo**<br>
-Orienter vers des épisodes de moins de 600Mo<br>
-  ```sh
-  {
-  "name": "Max 600 Mo",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "600 Mo max",
-      "implementation": "SizeSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "min": 0,
-        "max": 0.6
-      }
-    },
-    {
-      "name": "480p OUT",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 480
-      }
-    },
-    {
-      "name": "720p OUT",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 720
-      }
-    },
-    {
-      "name": "Season pack",
-      "implementation": "ReleaseTypeSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    }
-  ]
-}
-  ```
-<br>
-<br>
-
-**Max 800Mo**<br>
-Orienter vers des épisodes de moins de 800Mo<br>
-  ```sh
-  {
-  "name": "Max 800 Mo",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "800 Mo max",
-      "implementation": "SizeSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "min": 0,
-        "max": 0.8
-      }
-    },
-    {
-      "name": "480p OUT",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 480
-      }
-    },
-    {
-      "name": "720p OUT",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 720
-      }
-    },
-    {
-      "name": "Season pack",
-      "implementation": "ReleaseTypeSpecification",
-      "negate": true,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    }
-  ]
-}
-  ```
-<br>
-<br>
-
 **MULTi**<br>
 Reconnaître les vraies releases MULTi<br>
   ```sh
@@ -1099,13 +1099,61 @@ Reconnaître les vraies releases MULTi<br>
 <br>
 <br>
 
-**Season Packs** ⚠️<br>
-_Attention, à utiliser uniquement si vous avez un ratio correct sur l'ensemble de vos trackers !_<br><br>
-Cela permet de favoriser les packs de saisons. Pourquoi ça peut paraître con : si on a grab épisode / épisode et que la même team fait un pack, ça sert à rien du tout, on crame son ratio pour rien.<br>
-MAIS, associé avec le custom format **Light** (H265), ça peut faire économiser pas mal d'espace car les releases h265 mettent souvent plus de temps à arriver, et j'ai cru remarquer que c'est souvent quand une saison complète est dispo qu'on voit les packs h265 arrivés... Voilà voilà, je me sentais obligé de me justifier haha<br>
+**Season Pack > 15 Go**<br>
+Exclure les packs de saisons supérieur à 15Go afin de pas bousiller son ratio - à ajuster maybe<br>
   ```sh
   {
-  "name": "Season Pack",
+  "name": "Season Pack > 15 Go",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Min 15Go",
+      "implementation": "SizeSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "min": 0,
+        "max": 15.01
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
+**Season Pack ≤ 3 Go**<br>
+Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 3 Go<br>
+  ```sh
+  {
+  "name": "Season Pack ≤ 3 Go",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -1123,7 +1171,7 @@ MAIS, associé avec le custom format **Light** (H265), ça peut faire économise
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(MULTi(?![ .-]subs?))(\\d|\\b)|FR\\+..|..\\+FR"
+        "value": "\\bMULTI(?:[ ._-]?(?:VFI|VFF|VFQ|VF2|VFQ2|VFF2|VFI2|\\d))?\\b(?![ ._-]?subs?)|\\bFR\\s*\\+\\s*[A-Z]{2}\\b|\\b[A-Z]{2}\\s*\\+\\s*FR\\b"
       }
     },
     {
@@ -1171,6 +1219,368 @@ MAIS, associé avec le custom format **Light** (H265), ça peut faire économise
       "required": false,
       "fields": {
         "value": 720
+      }
+    },
+    {
+      "name": "Max 3Go",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 1,
+        "max": 3
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
+**Season Pack ≤ 6 Go**<br>
+Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 6 Go<br>
+  ```sh
+  {
+  "name": "Season Pack ≤ 6 Go",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "Titre MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bMULTI(?:[ ._-]?(?:VFI|VFF|VFQ|VF2|VFQ2|VFF2|VFI2|\\d))?\\b(?![ ._-]?subs?)|\\bFR\\s*\\+\\s*[A-Z]{2}\\b|\\b[A-Z]{2}\\s*\\+\\s*FR\\b"
+      }
+    },
+    {
+      "name": "Original",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": -2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "French",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "x265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(((x|h)\\.?265)|(HEVC))"
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Max 6Go",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 1,
+        "max": 6
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
+**Season Pack ≤ 9 Go**<br>
+Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 9 Go<br>
+  ```sh
+  {
+  "name": "Season Pack ≤ 9 Go",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "Titre MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bMULTI(?:[ ._-]?(?:VFI|VFF|VFQ|VF2|VFQ2|VFF2|VFI2|\\d))?\\b(?![ ._-]?subs?)|\\bFR\\s*\\+\\s*[A-Z]{2}\\b|\\b[A-Z]{2}\\s*\\+\\s*FR\\b"
+      }
+    },
+    {
+      "name": "Original",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": -2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "French",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "x265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(((x|h)\\.?265)|(HEVC))"
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Max 9Go",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 1,
+        "max": 9
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
+**Season Pack ≤ 12 Go**<br>
+Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 12 Go<br>
+  ```sh
+  {
+  "name": "Season Pack ≤ 12 Go",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "Titre MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bMULTI(?:[ ._-]?(?:VFI|VFF|VFQ|VF2|VFQ2|VFF2|VFI2|\\d))?\\b(?![ ._-]?subs?)|\\bFR\\s*\\+\\s*[A-Z]{2}\\b|\\b[A-Z]{2}\\s*\\+\\s*FR\\b"
+      }
+    },
+    {
+      "name": "Original",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": -2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "French",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "x265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(((x|h)\\.?265)|(HEVC))"
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Max 12Go",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 1,
+        "max": 12
+      }
+    }
+  ]
+}
+  ```
+<br>
+<br>
+
+**Season Pack ≤ 15 Go**<br>
+Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 15 Go<br>
+  ```sh
+  {
+  "name": "Season Pack ≤ 15 Go",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Season pack",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "Titre MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bMULTI(?:[ ._-]?(?:VFI|VFF|VFQ|VF2|VFQ2|VFF2|VFI2|\\d))?\\b(?![ ._-]?subs?)|\\bFR\\s*\\+\\s*[A-Z]{2}\\b|\\b[A-Z]{2}\\s*\\+\\s*FR\\b"
+      }
+    },
+    {
+      "name": "Original",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": -2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "French",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "x265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(((x|h)\\.?265)|(HEVC))"
+      }
+    },
+    {
+      "name": "480p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 480
+      }
+    },
+    {
+      "name": "720p OUT",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    },
+    {
+      "name": "Max 15Go",
+      "implementation": "SizeSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "min": 1,
+        "max": 15
       }
     }
   ]
@@ -1247,6 +1657,3 @@ Voici un exemple des scores que j'ai appliqué uniquement sur HD-1080p, à adapt
 <br>
 <br>
 Have fun !
-
-
-
