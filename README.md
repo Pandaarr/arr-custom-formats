@@ -1227,7 +1227,7 @@ Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 3 Go<br>
       "negate": false,
       "required": true,
       "fields": {
-        "min": 1,
+        "min": 0,
         "max": 3
       }
     }
@@ -1315,7 +1315,7 @@ Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 6 Go<br>
       "negate": false,
       "required": true,
       "fields": {
-        "min": 1,
+        "min": 0,
         "max": 6
       }
     }
@@ -1403,7 +1403,7 @@ Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 9 Go<br>
       "negate": false,
       "required": true,
       "fields": {
-        "min": 1,
+        "min": 0,
         "max": 9
       }
     }
@@ -1491,7 +1491,7 @@ Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 12 Go<br>
       "negate": false,
       "required": true,
       "fields": {
-        "min": 1,
+        "min": 0,
         "max": 12
       }
     }
@@ -1579,7 +1579,7 @@ Orienter vers des packs de saisons en MULTi et en x265 moins lourd que 15 Go<br>
       "negate": false,
       "required": true,
       "fields": {
-        "min": 1,
+        "min": 0,
         "max": 15
       }
     }
